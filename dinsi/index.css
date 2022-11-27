@@ -1,0 +1,710 @@
+*{
+    margin: 0;
+    color: black;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+:root{
+    --bg-color:linear-gradient(to bottom,rgb(194,227,252),rgb(239,243,246));
+    --bg-color2:linear-gradient(to bottom,rgb(37,172,175),rgb(194,227,252));
+    --second-color:#5a71;
+    --main-color:#6e54fa;
+    --big-font:4rem;
+    --h2-font:2.5rem;
+    --h3-font:1.4rem;
+    --p-font:1.3rem;
+    --button-color: rgb(218,100,28);
+}
+body{
+     overflow-x: hidden;
+    background-image: var(--bg-color);
+}
+
+main{
+    width: 100%;
+    padding: 40px;
+}
+
+/*======================================================= nav- bar ====================================================*/
+
+nav{
+    width: 90%;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+nav ul{
+    display: flex;
+    align-items: baseline;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 40px;
+}
+
+nav ul li:last-child{
+    background-color: var(--button-color);
+    padding: 6px;
+    margin-top: 0px;
+}
+
+nav ul li:last-child a{
+        color: #fff;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: var(--p-font);
+}
+
+.logo{
+    width: 7%;
+}
+
+
+/*=========================================== content =====================================================*/
+
+.content{
+    width: 100%;
+    transform: translateY(20%);
+}
+
+.content h1{
+    display: inline-block;
+/*    color: var(--button-color);*/
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 40%;
+    font-size: var(--big-font);
+/*    transform: translateX(75px);*/
+    transform: translateX(15%);
+}
+
+.content p{
+    color: var(--button-color);
+    font-weight: bold;
+    font-size: var(--p-font);
+    margin-top: 20px;
+    transform: translateX(6%);
+}
+
+
+/*============================================= benefit-section =========================================*/
+.top{
+/*    position: absolute;*/
+}
+
+.benefits{
+    width: 100%;
+/*    position: absolute;*/
+    background-image: linear-gradient( 180deg,rgb(22,73,76) 70%,rgb(47,158,165)90%,rgb(148,212,217)100%);
+    text-align: center;
+    align-content: center;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    border: none;
+}
+
+.benefits h2{
+    font-size: var(--h2-font);
+    color: white;
+}
+hr{
+    color: yellow;
+    background: rgb(28,82,84);
+/*    height: 3px;*/
+}
+
+
+
+/*========================================================== list =================================================*/
+
+.list{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-content: center;
+    grid-gap: 30px;
+    width: 80%;
+}
+
+
+.list p{
+    font-size: var(--p-font);
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 130px;
+}
+
+.list img{
+/*    display: block;*/
+    width: 40%;
+}
+
+/*======================================== action ================================*/
+
+
+.action{
+    display: grid;
+    place-content: center;
+    padding: 80px 10%;
+    background: white;
+}
+
+.action h2{
+    font-size: var(--big-font);
+    color: rgb(27,75,80);
+}
+
+.action a{
+    display: inline-block;
+    margin-top: 60px;
+    box-shadow: 10px 10px 10px 4px #88888888;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    background: var(--button-color);
+    color: white;
+    text-align: center;
+    font-size:var(--p-font);
+}
+
+
+/*======================================= footer===========================================*/
+
+footer{
+    display: flex;
+    background-color: rgb(38,38,38);
+    color: white;
+    padding: 10px 16%;
+    align-items: center;
+}
+
+footer img{
+    width: 10%;
+}
+
+.footer{
+    transform: translateX(50%);
+}
+
+.footer p{
+    text-align: center;
+    color: white;
+/*    font-size: var(--p-font);*/
+}
+
+
+
+
+
+
+/*======================================================================================================================================================================= registration page =================================================================*/
+
+.wrapper{
+    background: var(--bg-color);
+}
+
+.register{
+    background: none;
+}
+
+.main-content{
+    display: grid;
+    place-content: center;
+    margin-top: 50px;
+}
+
+.main-content h1{
+    font-size: var(--big-font);
+    margin-bottom: 30px;
+}
+
+.main-content ul li a{
+    font-size: var(--p-font);
+    text-decoration: none;
+    margin-left: 20%;
+}
+
+
+.main-content ul li{
+    display: flex;
+    list-style: none;
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+}
+
+.main-content img{
+    width: 20px;
+}
+
+.main-content p,
+.main-content a{
+    font-size: var(--p-font);
+}
+
+.main-content .redirect{
+    color: blue;
+}
+
+.main-content p{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+
+
+/*======================================================================================================================================================================= login page =================================================================*/
+
+
+.icons{
+    display: flex;
+    width: 100%;
+    position: relative;
+    left: 5%;
+}
+
+.icons img{
+    width: 40px;
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.option{
+    transform: translateX(-14%);
+}
+
+form{
+    transform: translateX(-20%);
+    text-align: left;
+}
+
+label{
+    font-size: var(--p-font);
+    margin-bottom: 10px;
+    display: block;
+}
+
+input{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    outline-color: orange;
+    font-size: var(--p-font);
+    margin-bottom: 20px;
+}
+
+.remember{
+    transform: translateX(-20%);
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+button{
+    font-size: var(--p-font);
+    background: var(--button-color);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+
+
+
+/*======================================================================================================================================================================= marketPlace page =================================================================*/
+
+
+.market{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(10px,auto);
+    place-content: center;
+    padding: 40px 18%;
+    grid-gap: 30px;
+}
+
+
+.market h1, .market p{
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.house{
+    padding: 0px;
+}
+
+.house img{
+    width: 100%;
+    height: 100%;
+}
+
+.details{
+    margin-top: 0px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    background: var(--bg-color2);
+}
+
+.details h2{
+    font-size: var(--h2-font);
+    color: var(--button-color);
+    font-weight: normal;
+}
+
+.details p{
+    font-size: var(--p-font);
+    margin-bottom: 2px;
+    margin-top: 12px;
+}
+
+.name{
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    margin-left: 80px;
+    position: absolute;
+    transform: translateY(-20px);
+    text-align: center;
+}
+
+.logo img{
+    width: 30px;
+}
+
+
+
+
+
+
+
+/*======================================================================================================================================================================= FAQ page =================================================================*/
+
+.sub{
+    text-align: center;
+}
+
+.main-content{
+    text-align: center;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+html{
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+
+.header{
+    margin-top: 40px;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.header img{
+    width: 80px;
+    display: inline-block;
+    display: block;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 50%;
+}
+
+
+.end a{
+    color: var(--button-color);
+}
+
+/*========================================= accordion ====================================================*/
+
+
+ p{
+    font-size: var(--p-font);
+}
+.icon{
+    color: white;
+}
+
+.container{
+    width: 100%;
+    max-width: 80rem;
+    margin:0 auto;
+    padding: 0 .5rem;
+}
+
+.accordion-item{
+    background-color: var(--button-color);
+    color: white;
+    margin-bottom: 1rem;
+    border-radius: .4rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,.5);
+}
+
+.accordion-link{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: black;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2px;
+}
+
+.accordion-link i{
+    padding: .5rem;
+}
+
+.accordion-link .ion-md-remove{
+    display: none;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(159,64,0);
+    transition: max-height 650ms;
+}
+
+.answer p{
+    color: white;
+}
+
+.answer:before{
+    content: '';
+    position:absolute;
+    width: .6rem;
+    height: 90%;
+    background: rgb(255,116,23);
+    top: 50%;
+    left: 0;
+    transform: translatey(-50%);
+}
+
+.answer p{
+    padding: 1.5rem;
+    font-size: var(--p-font);
+}
+.accordion-item:target .answer{
+    max-height: 50rem;
+}
+
+.accordion-item:target .accordion-link .ion-md-add{
+    display: none;
+}
+
+.accordion-item:target .accordion-link .ion-md-remove{
+    display: block;
+}
+
+
+
+/*======================================================================================================================================================================= marketPlace page =================================================================*/
+.dashboard{
+    background: none;
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: .7fr 1fr 1fr;
+    grid-template-rows: repeat(2,(minmax(200px,auto)));
+    height: 100vh;
+    
+}
+
+.grid-wrapper div{
+/*    background: blue;*/
+}
+
+/*==================================== user details ========================================*/
+
+.user-details{
+    background: rgb(0,194,203);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    text-align: center;
+}
+
+.user-details h2{
+    font-size: var(--h2-font);
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+.user-details img{
+    margin-top: 30px;
+    width: 160px;
+    margin-bottom: 50px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.user-details ul{
+    text-align: left;
+}
+
+.user-details ul li{
+    list-style: none;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.user-details ul li a{
+    text-decoration: none;
+    font-size: var(--p-font);
+    color: white;
+}
+
+.selected{
+    background: rgb(32,93,98);
+    padding: 7px;
+}
+
+/*==================================== dash-content ========================================*/
+
+
+.dash-content{
+    grid-column: 2/4;
+    grid-row: 1/4;
+}
+
+
+.banner{
+    background: rgb(129,224,230);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.banner img{
+    width: 5%;
+}
+
+.fund-status{
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text{
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.text h2{
+    font-size: var(--h2-font);
+    color: var(--button-color);
+    display: inline-block;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.text p{
+    display: inline;
+    margin-left: 30%;
+    background: rgb(235,236,238);
+    padding: 15px;
+    border-radius: 20px;
+    align-items: baseline;
+}
+
+.text p>span img{
+    width: 2%;
+    margin-left: 25px;
+}
+
+input[type="search"]{
+    background: rgb(235,236,238);
+    position: relative;
+    transform: translateX(50%);
+    margin-top: 30px;
+    width: 65%;
+}
+
+.text ::placeholder{
+    float: right;
+    position: relative;
+    top: -10px;
+    transform: rotate(270deg);
+    font-size: var(--h2-font);
+}
+
+
+/*=============================================== stats ===============================================================*/
+
+.stats{
+    display: grid;
+    place-content: center;
+    margin-top: 20px;
+}
+
+.stats-wrapper{
+    width: 80%;
+    max-height: 1000px;
+
+}
+
+
+/*==================================== footer-section ========================================*/
+
+
+.footer-section{
+    display: flex;
+    background-color: rgb(38,38,38);
+    color: white;
+    padding: 10px 16%;
+    align-items: center;
+    grid-column:1/4;
+    grid-row: 4/4;
+}
+
+.footer-section img{
+    width: 10%;
+}
+
+
+
+
